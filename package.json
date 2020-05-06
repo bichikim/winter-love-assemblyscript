@@ -1,0 +1,12 @@
+{
+  "name": "winter-love-assemblyscript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "repository": "git@github.com:bichikim/winter-love-assemblyscript.git",
+  "author": "Bichi Kim <bichi@live.co.kr>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}

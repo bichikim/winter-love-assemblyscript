@@ -1,0 +1,10 @@
+# Docuemnts
+docs/_book
+
+# Test
+test/
+
+# Dependencies
+node_modules/
+
+.idea/

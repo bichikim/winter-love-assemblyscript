@@ -1,0 +1,19 @@
+{
+  "name": "assembly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@assemblyscript/loader": "^0.9.4"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.9.4"
+  },
+  "scripts": {
+    "asbuild:untouched": "asc src/index.ts -b build/untouched.wasm -t build/untouched.wat --validate --sourceMap --debug",
+    "asbuild:optimized": "asc src/index.ts -b build/optimized.wasm -t build/optimized.wat --validate --sourceMap --optimize",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
+    "test": "node tests"
+  }
+}
